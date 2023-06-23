@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('https://fonts.cdnfonts.com/css/orator-std');
+
+body{
+    font: #edf0da;
+    background-image: linear-gradient(to top,#4a2040, #ad0987);
+    background-attachment: fixed;
+
+}
+header{
+    width: auto;
+    height: 85px;
+    /*abackground-image: linear-gradient(to top, #4a2040 30%, #6e3060);*/
+    background-color: #582561;
+}
+header>header#menu{
+    display: none;
+}
+header:hover>header#menu{
+    display: block;
+}
+header#menu{
+    position: absolute;
+    
+}
+header#cabecalho{
+    width:150px;
+    height: 64px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    
+}
+picture#logocabecalho{
+    
+}
+
+h1, h2, h3, h4, p, ul {
+    text-align: center;
+    font-family:'Orator Std', monospace, 'Courier New', sans-serif, Courier;
+    font-style: normal;
+    font-weight: 400;
+    color: #edf0da;
+}
+p{
+    color: #edf0da;
+}
+ul{
+    list-style: none;
+    color: #edf0da;
+}
