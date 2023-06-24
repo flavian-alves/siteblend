@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
 @import url('https://fonts.cdnfonts.com/css/orator-std');
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
+    height: 100vh;
     font: #edf0da;
-    background-image: linear-gradient(to top,#4a2040, #ad0987);
+    background-image: linear-gradient(to top,#31132a, #ad0987);
     background-attachment: fixed;
-
 }
 header{
     width: auto;
     height: 85px;
     /*abackground-image: linear-gradient(to top, #4a2040 30%, #6e3060);*/
-    background-color: #582561;
+    background-color: #3f1b37;
 }
 header>header#menu{
     display: none;
@@ -35,12 +38,44 @@ header#cabecalho{
     left: 0px;
     right: 0px;
     margin: auto;
+}
+#se01{
+    margin: auto;
+    margin-top: 115px;
+    background-image: linear-gradient(to right, #31132a00 20%, #31132a73 80%);
+    /*background-color: #31132a73;*/
+    height: 300px;
+    max-width: 80vw;
+}
+section#home{
+    position: relative;
+    margin-top: 20px;
+    max-width: 80vw;
+    max-height: 900px;
+}
+#sessao1{
+    position: absolute;
+    right: 40%;
+    margin-top: 7px;
+    /*border: 2px solid black;*/
+    max-width: 600px;
+    line-height: 50px;
     
 }
-picture#logocabecalho{
-    
+#spotify>iframe{  
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    width: 40%;
+    height: 60%;
 }
-
+/*article>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 40%;
+    height: 60%;
+}*/
 h1, h2, h3, h4, p, ul {
     text-align: center;
     font-family:'Orator Std', monospace, 'Courier New', sans-serif, Courier;
