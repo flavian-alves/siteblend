@@ -9,42 +9,47 @@
 </head>
 <body>
     <header>
-        <header id="menu">
-            <nav>
-                    <a href="#">Início</a>
-                    <a href="#">Música</a>
-                    <a href="#">Vídeo</a>
-                    <a href="#">Contato</a>
-            </nav>
-        </header>
-        <header id="cabecalho">
-            <picture id="logocabecalho">
-                <img src="imagens/logotipos/logoheadsemac2.png" alt="logoblend">
-            </picture>
-        </header>
+        <picture id="logoblend">
+                <a href="#inicio"><img src="imagens/logotipos/logoheadsemac2.png" alt="logoblend"></a>
+        </picture>
+        <nav id="menusuperior">
+            <ul>
+                    <li><a href="#inicio">Início</a>
+                        <li><a href="#musicas">Músicas</a>
+                            <li><a href="#video">Vídeos</a>
+                                <li><a href="#links">Links</a>
+            </ul>
+        </nav>       
     </header>
     <main>
-        
-        </header>
-        <section id="se01">
-            <article id="home">
-                <article id="sessao1">
+        <section id="inicio">
+            <article id="sessao1">
                     <h2>Blend - EP Acredite</h2>
                     <h3>Ouça nosso primeiro EP-Acredite no Spotify e nas principais plataformas de streaming!</h3>
                     <h3>1. O Segredo <br> 2. Eu Vou</h3>
                     <h4>Siga a Blend nas redes sociais: <br>
                         <!--aqui coloca-se os links para spotify, insta e youtube-->
                     </h4>
-                </article>
-                <article id="spotify">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6NR1TLtU3fHicNMUAs5ARx?utm_source=generator&theme=0" width="300px" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </article>
+            </article>
+            <article id="foto-cd">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6NR1TLtU3fHicNMUAs5ARx?utm_source=generator&theme=0" width="300px" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </article>
         </section>
-        <section>
-            <h2>
-                Músicas
-            </h2>
+        <section id="musicas">
+            <div class="sessao-musica">
+                <h2>
+                    Músicas
+                </h2>
+            </div>
+            <div class="sessao-musica">
+                <article id="foto-sessao-musica">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6NR1TLtU3fHicNMUAs5ARx?utm_source=generator&theme=0" width="300px" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </article>
+                <article id="player">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6NR1TLtU3fHicNMUAs5ARx?utm_source=generator&theme=0" width="300px" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </article>
+            </div>
+            
         </section>
     </main>
     <!--
