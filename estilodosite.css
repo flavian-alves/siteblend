@@ -155,10 +155,8 @@ header #menusuperior ul li a{
         justify-content: center;
     }
     #musicas .sessao-musica #player iframe{
-        width: 500px;
+        width: 430px;
         height: 380px;
-        border-top-right-radius: 0px;
-        border-top-left-radius: 0px;
     }
     #foto-sessao-musica{
         width: 100%;
