@@ -120,10 +120,15 @@ header #menusuperior ul li a{
 }
 @media(max-width: 900px){
     header{
-        gap: 10px;
+        display: block;
+        text-align: center;
     }
     header picture img{
+        text-align: center;
         width: 150px;
+    }
+    header #menusuperior{
+        width: 100%;
     }
     header #menusuperior ul li a{
         font-size: 15px;
