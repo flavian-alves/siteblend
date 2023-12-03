@@ -156,7 +156,7 @@ header #menusuperior ul li a{
         display: block;
         text-align: center;
     }
-    #musicas .sessao-musica, #videos #video{
+    #musicas .sessao-musica{
         width: 100%;
         background-position: center;
         background-size: 100vh;
@@ -187,6 +187,8 @@ header #menusuperior ul li a{
     }
     #videos #video{
         padding-top: 50px;
+        width: 100%;
+        background-attachment: fixed;
     }
     #video .titulo-section{
         padding-bottom: 50px;
@@ -234,7 +236,6 @@ ul{
     
 
 }
-
 #player{
     width: 50%;
     display: flex;
@@ -244,7 +245,6 @@ ul{
 #videos{
     /*background-image: linear-gradient(to bottom, #31132a00 2%, #31132a73 99%);*/
     background-color: #31132a;
-    max-height: 900px;
 
 }
 #videos #video{
@@ -255,7 +255,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    flex-wrap: wrap;
 }
 
 .video-yt{
