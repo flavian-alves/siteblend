@@ -142,7 +142,7 @@ header #menusuperior ul li a{
     }
     #chamada{
         padding: 0;
-        width: 100%;
+        width: 100vh;
     }
     #foto-cd{
         display: flex;
