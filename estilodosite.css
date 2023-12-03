@@ -44,6 +44,7 @@ header #menusuperior ul{
     width: 100%;
 }
 header #menusuperior ul li{ 
+    width: 100px;
     list-style-type: none;
 }
 header #menusuperior ul li a{
@@ -54,30 +55,124 @@ header #menusuperior ul li a{
     font-family:'Orator Std', monospace, 'Courier New', sans-serif, Courier;
      
 }
-
 #inicio{
+    background-image: linear-gradient(to bottom, #31132a00 2%, #31132a73 99%), 
+                                        url(imagens/outras-imagens/back-ondas.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    flex-wrap: wrap;
+}
+#inicio-chamada{
     display: flex;
-    background-image: linear-gradient(to bottom, #31132a00 20%, #31132a73 80%);
-    padding: 120px;
-    max-height: 900px;
-    align-items: center;
+    padding: 0 120px 0 120px;
+    align-items: start;
     justify-content: center;
     flex-wrap: wrap;
     /*overflow: hidden; faz com que o conteúdo da div não estravase p tamanho da div*/
 }
+.titulo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
 #sessao1{
-    width: 50%;
+    width: 100%;
     right: 40%;
     min-width: 300px;
     /*border: 2px solid black;*/
     line-height: 50px;
     
 }
+#chamada{
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    flex-wrap: wrap;
+}
 #foto-cd{
+    max-width: 50%;
+    /*display: flex;
+    align-items: start;
+    justify-content: center;*/
+}
+
+#foto-sessao-musica{
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+#foto-sessao-musica picture{
+    height: 533px;
+}
+#foto-sessao-musica picture img{
+    width: 520px;
+}
+
+#musicas #player iframe{
+    width: 400px;
+    height: 533px;
+           
+}
+@media(max-width: 900px){
+    header #menusuperior ul li a{
+        font-size: 15px;
+    }
+    #inicio-chamada{
+        background-position: center;
+        
+    }
+    #inicio{
+        background-attachment: fixed;
+    }
+    #chamada{
+        padding: 0;
+        width: 100%;
+    }
+    #foto-cd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    #musicas{
+        display: block;
+        text-align: center;
+    }
+    #musicas .sessao-musica{
+        width: 100%;
+        background-position: center;
+        background-size: auto;
+    }
+    #musicas .sessao-musica #player{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #musicas .sessao-musica #player iframe{
+        width: 500px;
+        height: 380px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    #foto-sessao-musica{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #foto-sessao-musica picture{
+        height: 430px;
+    }
+    #foto-sessao-musica picture img{
+        width: 420px;
+    }
+
 }
 /*article>iframe{
     position: absolute;
@@ -102,28 +197,59 @@ ul{
 }
 #musicas{
     background-image: linear-gradient(to top, #31132a00 20%, #31132a73 80%);
-    max-height: 900px;
+    min-height: auto;
     
 }
 .sessao-musica{
-    padding: 50px;
+    padding: 10px 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background-image: url(imagens/outras-imagens/back-universe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
 
 }
-#foto-sessao-musica{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 #player{
     width: 50%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+}
+#videos{
+    /*background-image: linear-gradient(to bottom, #31132a00 2%, #31132a73 99%);*/
+    background-color: #31132a;
+    max-height: 900px;
+    padding: 30px;
+
+}
+#videos div{
+    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+.video-yt{
+    border-radius: 10px;
+}
+#links{
+    background-image: linear-gradient(to top, #31132a00 20%, #31132a73 80%);
+    max-height: 900px;
+    padding: 50px;
+}
+
+footer{
+    background-color: #31132a;
+    padding: 10px;    
+}
+footer a{
+    text-decoration: none;
+    color: #ad0987;
+    font-weight: 600;
 }
 /*
 
