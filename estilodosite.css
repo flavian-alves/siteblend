@@ -53,6 +53,7 @@ header #menusuperior ul li a{
     font-size: 30px;
     font-weight: 500;
     font-family:'Orator Std', monospace, 'Courier New', sans-serif, Courier;
+    text-shadow: 0px 1px 2px black;
      
 }
 #inicio{
@@ -77,6 +78,7 @@ header #menusuperior ul li a{
     align-items: center;
     justify-content: center;
     padding: 50px;
+    text-shadow: 0px 1px 2px black;
 }
 #sessao1{
     width: 100%;
@@ -154,10 +156,11 @@ header #menusuperior ul li a{
         display: block;
         text-align: center;
     }
-    #musicas .sessao-musica{
+    #musicas .sessao-musica, #videos #video{
         width: 100%;
         background-position: center;
-        background-size: auto;
+        background-size: 100vh;
+        background-attachment: fixed;
     }
     #musicas .sessao-musica #player{
         width: auto;
@@ -182,7 +185,15 @@ header #menusuperior ul li a{
     #foto-sessao-musica picture img{
         max-width: 279px;
     }
-
+    #videos #video{
+        padding-top: 50px;
+    }
+    #video .titulo-section{
+        padding-bottom: 50px;
+    }
+    .video-yt{
+        margin-top: 50px;
+    }
 }
 /*article>iframe{
     position: absolute;
@@ -215,12 +226,12 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     background-image: url(imagens/outras-imagens/back-universe.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     flex-wrap: wrap;
+    
 
 }
 
@@ -234,16 +245,21 @@ ul{
     /*background-image: linear-gradient(to bottom, #31132a00 2%, #31132a73 99%);*/
     background-color: #31132a;
     max-height: 900px;
-    padding: 30px;
 
 }
-#videos div{
-    padding: 30px 0 0 0;
+#videos #video{
+    background-image: url(imagens/outras-imagens/back-universe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;
 }
+
 .video-yt{
+    margin: 0 50px 50px 50px;
     border-radius: 10px;
 }
 #links{
