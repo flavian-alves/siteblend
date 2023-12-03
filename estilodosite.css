@@ -155,7 +155,7 @@ header #menusuperior ul li a{
         justify-content: center;
     }
     #musicas .sessao-musica #player iframe{
-        width: 430px;
+        width: auto;
         height: 380px;
     }
     #foto-sessao-musica{
@@ -163,12 +163,13 @@ header #menusuperior ul li a{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: auto;
     }
     #foto-sessao-musica picture{
-        height: 430px;
+        height: 285px;
     }
     #foto-sessao-musica picture img{
-        width: 420px;
+        width: 279px;
     }
 
 }
