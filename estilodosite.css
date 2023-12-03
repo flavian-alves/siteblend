@@ -56,6 +56,16 @@ header #menusuperior ul li a{
     text-shadow: 0px 1px 2px black;
      
 }
+
+header #menusuperior ul li a:hover{
+    background-color: #31132a50;
+    text-shadow: 0px 0px 30px white;
+    transition: 0.3s;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 #inicio{
     background-image: linear-gradient(to bottom, #31132a00 2%, #31132a73 99%), 
                                         url(imagens/outras-imagens/back-ondas.png);
@@ -120,6 +130,7 @@ header #menusuperior ul li a{
     height: 533px;
            
 }
+
 @media(max-width: 900px){
     header{
         display: block;
@@ -265,7 +276,32 @@ ul{
 #links{
     background-image: linear-gradient(to top, #31132a00 20%, #31132a73 80%);
     max-height: 900px;
-    padding: 50px;
+}
+
+#links #social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#chamada #social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#chamada #social picture{
+    padding: 30px 10px;
+}
+
+#links #social picture{
+    padding: 30px 10px;
+}
+
+#links #social .social-img, #chamada #social .social-img{
+
+    width: 30px;
 }
 
 footer{
@@ -277,6 +313,46 @@ footer a{
     color: #ad0987;
     font-weight: 600;
 }
+
+#links #menuinferior {
+    display: flex;
+    width: 100%;
+    padding: 30px 0 40px;
+    align-items: center;  
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+#links #menuinferior ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#links #menuinferior ul li{ 
+    width: 100px;
+    list-style-type: none;
+}
+#links #menuinferior ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family:'Orator Std', monospace, 'Courier New', sans-serif, Courier;
+    text-shadow: 0px 1px 2px black;
+     
+}
+
+#links #menuinferior ul li a:hover{
+    background-color: #31132a50;
+    text-shadow: 0px 0px 30px white;
+    transition: 0.3s;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
 /*
 
 menu inicial convertidos em tabela
