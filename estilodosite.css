@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    position: fixed;
+    /*position: fixed;*/
     top: -1px;
     width: 100%;
     gap: 50px;
@@ -67,10 +67,10 @@ header #menusuperior ul li a:hover{
     border-radius: 5px;
     margin: 10px;
 }
-main{
+/*main{
 
     margin-top: 100px;
-}
+}*/
 #inicio{
     background-image: linear-gradient(to bottom, #31132a00 2%, #31132a73 99%), 
                                         url(imagens/outras-imagens/back-ondas.png);
@@ -136,83 +136,7 @@ main{
            
 }
 
-@media(max-width: 900px){
-    header{
-        display: block;
-        text-align: center;
-    }
-    header picture img{
-        text-align: center;
-        width: 150px;
-    }
-    header #menusuperior{
-        width: 100%;
-    }
-    header #menusuperior ul li a{
-        font-size: 15px;
-    }
-    #inicio-chamada{
-        background-position: center;
-        
-    }
-    #inicio{
-        background-attachment: fixed;
-    }
-    #chamada{
-        padding: 0;
-        width: 100vh;
-    }
-    #foto-cd{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-    }
-    #musicas{
-        display: block;
-        text-align: center;
-    }
-    #musicas .sessao-musica{
-        width: 100%;
-        background-position: center;
-        background-size: 100vh;
-        background-attachment: fixed;
-    }
-    #musicas .sessao-musica #player{
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #musicas .sessao-musica #player iframe{
-        max-width: 350px;
-        max-height: 380px;
-    }
-    #foto-sessao-musica{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-    }
-    #foto-sessao-musica picture{
-        max-height: 285px;
-    }
-    #foto-sessao-musica picture img{
-        max-width: 279px;
-    }
-    #videos #video{
-        padding-top: 50px;
-        width: 100%;
-        background-attachment: fixed;
-    }
-    #video .titulo-section{
-        padding-bottom: 50px;
-    }
-    .video-yt{
-        margin-top: 50px;
-    }
-}
+
 
 /*article>iframe{
     position: absolute;
@@ -357,7 +281,107 @@ footer a{
     border-radius: 5px;
     margin: 10px;
 }
-
+#botao-up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #31132a9f;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 900px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    header picture img{
+        text-align: center;
+        width: 150px;
+    }
+    header #menusuperior{
+        width: 100%;
+    }
+    header #menusuperior ul li a{
+        font-size: 15px;
+    }
+    #inicio-chamada{
+        background-position: center;
+        
+    }
+    #inicio{
+        background-attachment: fixed;
+    }
+    #chamada{
+        padding: 0;
+        width: 100vh;
+    }
+    #foto-cd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    #musicas{
+        display: block;
+        text-align: center;
+    }
+    #musicas .sessao-musica{
+        width: 100%;
+        background-position: center;
+        background-size: 100vh;
+        background-attachment: fixed;
+    }
+    #musicas .sessao-musica #player{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #musicas .sessao-musica #player iframe{
+        max-width: 350px;
+        max-height: 380px;
+    }
+    #foto-sessao-musica{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    #foto-sessao-musica picture{
+        max-height: 285px;
+    }
+    #foto-sessao-musica picture img{
+        max-width: 279px;
+    }
+    #videos #video{
+        padding-top: 50px;
+        width: 100%;
+        background-attachment: fixed;
+    }
+    #video .titulo-section{
+        padding-bottom: 50px;
+    }
+    .video-yt{
+        margin-top: 50px;
+    }
+    #botao-up{
+        position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #31132a9f;
+    bottom: 20px;
+    right: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
 
 /*
 
