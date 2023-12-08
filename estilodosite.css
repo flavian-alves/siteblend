@@ -11,11 +11,13 @@ body{
     font: #edf0da;
     background-image: linear-gradient(to top,#31132a, #ad0987);
     background-attachment: fixed;
+    
 }
 
 header{
+    position: fixed;
+    top: -1px;
     width: 100%;
-    position: relative;
     gap: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +67,10 @@ header #menusuperior ul li a:hover{
     border-radius: 5px;
     margin: 10px;
 }
+main{
 
+    margin-top: 100px;
+}
 #inicio{
     background-image: linear-gradient(to bottom, #31132a00 2%, #31132a73 99%), 
                                         url(imagens/outras-imagens/back-ondas.png);
@@ -208,6 +213,7 @@ header #menusuperior ul li a:hover{
         margin-top: 50px;
     }
 }
+
 /*article>iframe{
     position: absolute;
     top: 5%;
